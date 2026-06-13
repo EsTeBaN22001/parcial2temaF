@@ -10,15 +10,17 @@ public class Abonado {
     private boolean debitoAutomatico;
     private int password;
     private Domicilio domicilio;
+    private String canalRegistro; // "teléfono" o "web"
     private List<SolicitudArreglo> solicitudes;
 
-    public Abonado(String nombre, String celular, String mail, boolean debitoAutomatico, int password, Domicilio domicilio) {
+    public Abonado(String nombre, String celular, String mail, boolean debitoAutomatico, int password, Domicilio domicilio, String canalRegistro) {
         this.nombre = nombre;
         this.celular = celular;
         this.mail = mail;
         this.debitoAutomatico = debitoAutomatico;
         this.password = password;
         this.domicilio = domicilio;
+        this.canalRegistro = canalRegistro;
         this.solicitudes = new ArrayList<>();
     }
 
@@ -109,5 +111,13 @@ public class Abonado {
 
     public List<SolicitudArreglo> getSolicitudes() {
         return solicitudes;
+    }
+
+    public String getCanalRegistro() {
+        return canalRegistro;
+    }
+
+    public void setCanalRegistro(String canalRegistro) {
+        this.canalRegistro = canalRegistro;
     }
 }

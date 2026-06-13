@@ -1,19 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.parcial2temaf.AbonadoTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.099 s <<< FAILURE! -- in com.parcial2temaf.AbonadoTest
-com.parcial2temaf.AbonadoTest.testDelay -- Time elapsed: 0.070 s <<< ERROR!
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.106 s <<< FAILURE! -- in com.parcial2temaf.AbonadoTest
+com.parcial2temaf.AbonadoTest.testDelay -- Time elapsed: 0.073 s <<< ERROR!
 org.junit.runners.model.TestTimedOutException: test timed out after 50 milliseconds
 	at java.base/java.lang.Thread.sleepNanos0(Native Method)
 	at java.base/java.lang.Thread.sleepNanos(Thread.java:496)
 	at java.base/java.lang.Thread.sleep(Thread.java:527)
-	at com.parcial2temaf.Abonado.delay(Abonado.java:39)
+	at com.parcial2temaf.Abonado.delay(Abonado.java:41)
 	at com.parcial2temaf.AbonadoTest.testDelay(AbonadoTest.java:59)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 
-com.parcial2temaf.AbonadoTest.testValidarPsw -- Time elapsed: 0.001 s <<< FAILURE!
+com.parcial2temaf.AbonadoTest.testValidarPsw -- Time elapsed: 0.002 s <<< FAILURE!
 java.lang.AssertionError: Esta prueba debe fallar intencionalmente según consigna
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)

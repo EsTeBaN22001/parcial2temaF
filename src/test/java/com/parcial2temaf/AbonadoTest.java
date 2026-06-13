@@ -24,7 +24,7 @@ public class AbonadoTest {
     @Before
     public void setUp() {
         // Inicializamos un abonado base antes de cada prueba
-        abonado = new Abonado("Juan Perez", "1122334455", "juan.perez@example.com", true, 1234, null);
+        abonado = new Abonado("Juan Perez", "1122334455", "juan.perez@example.com", true, 1234, null, "web");
     }
 
     @After
@@ -62,7 +62,7 @@ public class AbonadoTest {
     @Test
     public void testAbonadosDiferentes() {
         // ÉXITO: Comparamos con otro abonado distinto
-        Abonado otroAbonado = new Abonado("Maria Lopez", "1199887766", "maria@example.com", false, 4321, null);
+        Abonado otroAbonado = new Abonado("Maria Lopez", "1199887766", "maria@example.com", false, 4321, null, "teléfono");
         assertTrue("Los abonados deben ser diferentes (distinto nombre)", abonado.abonadosDiferentes(otroAbonado));
     }
 }

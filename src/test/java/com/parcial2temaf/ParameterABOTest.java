@@ -16,7 +16,7 @@ public class ParameterABOTest {
     })
     public void testValidarEmailParametrizado(String mail, boolean resultadoEsperado) {
         // Inicializamos un abonado con el email parametrizado
-        Abonado abonado = new Abonado("Test Parametrizado", "123456", mail, false, 1234, null);
+        Abonado abonado = new Abonado("Test Parametrizado", "123456", mail, false, 1234, null, "web");
         
         // Verificamos si la regex valida correctamente o no según lo esperado
         assertEquals(resultadoEsperado, abonado.validarEmail(), 
